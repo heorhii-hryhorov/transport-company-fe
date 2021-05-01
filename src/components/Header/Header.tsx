@@ -22,7 +22,7 @@ const Header: React.FC = () => (
       <Container>
         <Row className="flex-fill d-flex justify-content-start">
           <Col xs="12" md="8">
-            <NavbarBrand href="/" className="mr-auto">Transport Company</NavbarBrand>
+            <NavbarBrand to="/" tag={Link} className="mr-auto">Transport Company</NavbarBrand>
             <NavbarToggler
               id="navbar-toggler"
               className={styles['burger-btn']}
