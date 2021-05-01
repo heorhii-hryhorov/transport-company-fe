@@ -14,10 +14,10 @@ import {
   UncontrolledCollapse,
   UncontrolledDropdown,
 } from 'reactstrap';
-import './Header.css';
+import styles from './Header.module.css';
 
 const Header: React.FC = () => (
-  <header className="headerArea">
+  <header className={styles['header-area']}>
     <Navbar color="primary" dark expand="md" fixed="top">
       <Container>
         <Row className="flex-fill d-flex justify-content-start">
@@ -25,7 +25,7 @@ const Header: React.FC = () => (
             <NavbarBrand href="/" className="mr-auto">Transport Company</NavbarBrand>
             <NavbarToggler
               id="navbar-toggler"
-              className="burgerBtn"
+              className={styles['burger-btn']}
             />
           </Col>
           <Col xs="12" md="4">

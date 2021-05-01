@@ -1,0 +1,9 @@
+.not-found {
+  width: 100%;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+}
