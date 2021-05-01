@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import AddTransportContainer from './containers/AddTransportContainer/AddTransportContainer';
+import EditTransportContainer from './containers/EditTransportContainer/EditTransportContainer';
 import HomeContainer from './containers/HomeContainer/HomeContainer';
 import NotFoundContainer from './containers/NotFoundContainer/NotFoundContainer';
 
@@ -12,6 +13,7 @@ const App: React.FC = () => (
       <Switch>
         <Route path="/" exact component={HomeContainer} />
         <Route path="/transport/create" exact component={AddTransportContainer} />
+        <Route path="/transport/edit" exact component={EditTransportContainer} />
         <Route component={NotFoundContainer} />
       </Switch>
     </>
