@@ -1,7 +1,10 @@
 import React from 'react';
+import Header from './components/Header/Header';
 
 const App: React.FC = () => (
-  <div className="App" />
+  <>
+    <Header />
+  </>
 );
 
 export default App;
