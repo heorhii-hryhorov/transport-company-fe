@@ -55,13 +55,13 @@ const Header: React.FC = () => (
                         Routes
                       </DropdownToggle>
                       <DropdownMenu right>
-                        <DropdownItem tag={Link} to="routes/create">
+                        <DropdownItem tag={Link} to="/routes/create">
                           Create
                         </DropdownItem>
-                        <DropdownItem tag={Link} to="routes/edit">
+                        <DropdownItem tag={Link} to="/routes/edit">
                           Edit
                         </DropdownItem>
-                        <DropdownItem tag={Link} to="routes/delete">
+                        <DropdownItem tag={Link} to="/routes/delete">
                           Delete
                         </DropdownItem>
                       </DropdownMenu>

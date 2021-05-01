@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import AddRouteContainer from './containers/AddRouteContainer/AddRouteContainer';
 import AddTransportContainer from './containers/AddTransportContainer/AddTransportContainer';
 import DeleteTransportContainer from './containers/DeleteTransportContainer/DeleteTransportContainer';
+import EditRouteContainer from './containers/EditRouteContainer/EditRouteContainer';
 import EditTransportContainer from './containers/EditTransportContainer/EditTransportContainer';
 import HomeContainer from './containers/HomeContainer/HomeContainer';
 import NotFoundContainer from './containers/NotFoundContainer/NotFoundContainer';
@@ -18,6 +19,7 @@ const App: React.FC = () => (
         <Route path="/transport/edit" exact component={EditTransportContainer} />
         <Route path="/transport/delete" exact component={DeleteTransportContainer} />
         <Route path="/routes/create" exact component={AddRouteContainer} />
+        <Route path="/routes/edit" exact component={EditRouteContainer} />
         <Route component={NotFoundContainer} />
       </Switch>
     </>
