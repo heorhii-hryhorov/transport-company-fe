@@ -4,16 +4,16 @@ import {
   Col, Form, FormGroup, Input, Label,
 } from 'reactstrap';
 
-const DeleteTransportForm: React.FC = () => (
+const DeleteRouteForm: React.FC = () => (
   <div>
-    <h3 className="mb-3">Delete transport</h3>
+    <h3 className="mb-3">Delete route</h3>
     <Form>
       <FormGroup row>
-        <Label for="transport-id" sm={2}>
-          Transport ID
+        <Label for="route-id" sm={2}>
+          Route ID
         </Label>
         <Col sm={10}>
-          <Input type="select" name="transport-id" id="transport-id">
+          <Input type="select" name="route-id" id="route-id">
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -30,4 +30,4 @@ const DeleteTransportForm: React.FC = () => (
   </div>
 );
 
-export default DeleteTransportForm;
+export default DeleteRouteForm;

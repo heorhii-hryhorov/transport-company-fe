@@ -79,7 +79,7 @@ const AddTransportForm: React.FC = () => (
         </Col>
       </FormGroup>
       <FormGroup row>
-        <Col sm={{ size: 12, offset: 2 }}>
+        <Col sm={{ size: 10, offset: 2 }}>
           <Button type="submit" color="primary">Create</Button>
         </Col>
       </FormGroup>

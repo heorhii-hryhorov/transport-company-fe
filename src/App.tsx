@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import AddRouteContainer from './containers/AddRouteContainer/AddRouteContainer';
 import AddTransportContainer from './containers/AddTransportContainer/AddTransportContainer';
+import DeleteRouteContainer from './containers/DeleteRouteContainer/DeleteRouteContainer';
 import DeleteTransportContainer from './containers/DeleteTransportContainer/DeleteTransportContainer';
 import EditRouteContainer from './containers/EditRouteContainer/EditRouteContainer';
 import EditTransportContainer from './containers/EditTransportContainer/EditTransportContainer';
@@ -20,6 +21,7 @@ const App: React.FC = () => (
         <Route path="/transport/delete" exact component={DeleteTransportContainer} />
         <Route path="/routes/create" exact component={AddRouteContainer} />
         <Route path="/routes/edit" exact component={EditRouteContainer} />
+        <Route path="/routes/delete" exact component={DeleteRouteContainer} />
         <Route component={NotFoundContainer} />
       </Switch>
     </>
