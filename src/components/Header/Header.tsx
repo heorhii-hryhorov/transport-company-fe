@@ -61,6 +61,9 @@ const Header: React.FC = () => (
                         <DropdownItem tag={Link} to="/routes/edit">
                           Edit
                         </DropdownItem>
+                        <DropdownItem tag={Link} to="/routes/assign-transport">
+                          Assign transport
+                        </DropdownItem>
                         <DropdownItem tag={Link} to="/routes/delete">
                           Delete
                         </DropdownItem>
