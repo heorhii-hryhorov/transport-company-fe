@@ -90,6 +90,18 @@ const AddRouteForm: React.FC = () => (
         </Col>
       </FormGroup>
       <FormGroup row>
+        <Label for="status" sm={2}>
+          Status
+        </Label>
+        <Col sm={10}>
+          <Input type="select" name="status" id="status">
+            <option>awaiting</option>
+            <option>in progress</option>
+            <option>completed</option>
+          </Input>
+        </Col>
+      </FormGroup>
+      <FormGroup row>
         <Col sm={{ size: 10, offset: 2 }}>
           <Button type="submit" color="primary">Create</Button>
         </Col>

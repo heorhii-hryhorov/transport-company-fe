@@ -37,8 +37,9 @@ const HomeContainer: React.FC = () => (
               <th>Departure date</th>
               <th>Transport type</th>
               <th>Revenue</th>
-              <th>Transport ID</th>
               <th>Arrival date</th>
+              <th>Status</th>
+              <th>Transport ID</th>
             </tr>
           </thead>
           <tbody />
