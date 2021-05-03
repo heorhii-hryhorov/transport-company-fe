@@ -99,3 +99,10 @@ export const deleteTransportRequest = ({
 export const deleteRouteRequest = ({
   id,
 }: any): AxiosTypedPromise<any> => client.delete(`route/delete/${id}`);
+
+export const assignTransportRequest = ({
+  routeId,
+  transportId,
+}: any): AxiosTypedPromise<any> => client.put(`route/assign/${routeId}`, {
+  transportId,
+});

@@ -22,7 +22,7 @@ const EditTransportForm: React.FC = () => {
   }, []);
 
   const defaultFormState = {
-    id: 'Select route id',
+    id: 'Select transport id',
     transportNumber: '',
     model: '',
     transportType: 'cargo',
@@ -66,7 +66,7 @@ const EditTransportForm: React.FC = () => {
           <Form onSubmit={handleSubmit}>
             <FormGroup row>
               <Label for="id" sm={2}>
-                Route ID
+                Transport ID
               </Label>
               <Col sm={10}>
                 <Input
@@ -77,8 +77,12 @@ const EditTransportForm: React.FC = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                 >
-                  <option>Select route id</option>
-                  {transports.map((route: any) => <option key={route.id}>{route.id}</option>)}
+                  <option>Select transport id</option>
+                  {transports.map((transport: any) => (
+                    <option key={transport.id}>
+                      {transport.id}
+                    </option>
+                  ))}
                 </Input>
               </Col>
             </FormGroup>
